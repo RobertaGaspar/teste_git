@@ -10,20 +10,41 @@
         
         <hr>
 
-        <h2>Comandos Básicos GIT</h2>
-        
-        <p> 
-            git init (Cria um repositório git vazio ou reinicia um existente) <br>
-            git clone (Copia um repositório) <br>
-            git add ou git add --nome_arquivo-- (Adicionar conteúdo do arquivo ao índice) <br>
-            git commit -m "mensagem de commit" (Registrar mudanças no repositório) <br>
-            git push (Atualiza remotamente as referencias associando aos objetos) <br>
-            git pull (Busca e integra com outro repositório local ou remoto) <br>
-            git merge (Junta dois ou mais históricos de desenvolvimento) <br>
-            git status (Mostra o trabalho da árvore de status) <br>
-            git log (Mostrar logs de confirmação) <br>
-            git branch --nome_branch-- (Listar, criar ou excluir ramificações) <br>
-            
-            fonte: https://git-scm.com/docs</p>
+        <h2><b>GIT</b></h2>
+        <hr>
+        <h3><b>Estados</b></h3>
+        <hr>
+        <ul>
+            <li>Modificado (modified);</li>
+            <li>Preparado (staged/index);</li>
+            <li>Consolidado (comitted);</li>
+        </ul>
+        <h3><b>Ajuda</b></h3>
+        <hr>
+        <p><b>Geral</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git help</p>
+        <p><b>Comando específico</b></p>
+        <div style="border-radius: 2px; background-color: #dae1e9;">
+        <p>git help add</p>
+        <p>git help commit</p>
+        <p>git help &#60qualquer_comando_git&#62</p>
+        </div>
+        <h3><b>Configuração</b></h3>
+        <hr>
+        <p><b>Geral</b></p>
+        <p>As configurações do GIT são armazenadas no arquivo .gitconfig localizado dentro do diretório do usuário do Sistema Operacinal &#40Ex.: Windows: C:\Users\Documents and Settings\Beta ou *nix /home/beta&#41.</p>
+        <p>As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.</p>
+        <p><b>Setar usuário</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git config --global user.name "Roberta Gaspar"</p>
+        <p><b>Setar email</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git config --global user.email roberta.gaspar@fatec.sp.gov.br</p>
+        <p><b>Setar editor</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git config --global core.editor vim</p>
+        <p><b>Setar ferramenta de merge</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git config --global merge.tool vimdiff</p>
+        <p><b>Setar aquivos a serem iguinorados</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git config --global core.excludesfile &#126&#47.gitignore</p>
+        <p><b>Listar configurações</b></p>
+        <p style="border-radius: 2px; background-color: #dae1e9;">git config --list</p>
 </body>
 </html>
